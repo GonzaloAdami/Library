@@ -1,0 +1,28 @@
+@import './Style/Button/style.scss';
+@import './Style/Card/style.scss';
+@import './Style/Nav/style.scss';
+@import './Style/Img/style.scss';
+@import './Style/Text/style.scss';
+@import './Style/Grid/style.scss';
+
+.newCard{
+    @include card(200px, 50px, 0em, 0.5em);
+    gap: 0.5em;
+}
+
+.messi{
+    @include img(30px, 30px, 0px);  
+}
+
+.container{
+    padding-top: 10%;
+    @include grid(100px, 100px);
+}
+
+.section{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+}

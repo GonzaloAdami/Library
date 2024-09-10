@@ -1,0 +1,30 @@
+.nav {
+  position: absolute;
+  display: flex;
+  float: left;
+  gap: 1em;
+  list-style: none;
+  font-size: 1em;
+  width: 100vw;
+  height: 1em;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 1em;
+  background-color: red;
+  border-radius: 0px;
+  color: white;
+}
+
+.nav-ul {
+  display: flex;
+  float: left;
+  gap: 1em;
+}
+
+.nav-ul-li {
+  list-style: none;
+  font-size: 1em;
+}
+
+/*# sourceMappingURL=style.css.map */

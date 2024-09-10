@@ -1,0 +1,17 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 4em;
+  height: 0em;
+  font-size: 4em;
+  border-radius: 4em;
+  border: none;
+  padding: 0.8em 3em;
+  background-color: rgb(60, 99, 197);
+  color: white;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */

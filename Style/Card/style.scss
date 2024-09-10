@@ -1,0 +1,18 @@
+@mixin card($width: auto, $height: auto, $py: 1em, $px: 1em, $radius: 15px, $bg: white){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    min-width: $width;
+    min-height: $height;
+    max-width: $width;
+    max-height: $height;
+    overflow: hidden;
+    padding: $py $px;
+    border-radius: $radius;
+    background-color: $bg;
+}
+
+.card{
+    @include card;
+}

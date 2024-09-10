@@ -1,0 +1,9 @@
+@mixin textBox($maxWidth: auto, $maxHeigth: auto, $overflow: scroll){
+    max-width: $maxWidth;
+    max-height: $maxHeigth;
+    overflow: $overflow;
+}
+
+.text-box{
+    @include textBox(30em, 50em, hidden)
+}

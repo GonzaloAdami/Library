@@ -1,0 +1,20 @@
+
+@mixin btn($width: 2em, $height: 1em, $radius: 15px ,$size: 1em, $bg: rgb(60, 99, 197), $color: white) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: $width;
+    height: $height;
+    font-size: $size;
+    border-radius: $radius;
+    border: none;
+    padding: 0.8em 3em;
+    background-color: $bg;
+    color: $color;
+    font-weight: bold
+}
+
+.btn {
+    @include btn(4em, 0em, 4em, 4em);
+}

@@ -1,0 +1,19 @@
+@mixin grid($min-size: 200px, $gap: 20px) {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax($min-size, 1fr));
+    grid-gap: $gap;
+    width: 90%;
+    height: 90%;
+}
+
+
+.cube {
+    background-color: red;
+    width: 100%; // Para que los cubos ocupen el tamaño definido por el grid
+    aspect-ratio: 1; // Esto mantiene un ancho y alto igual para crear un cubo
+}
+
+
+.grid {
+    @include grid(200px, 20px); // 200px es el tamaño mínimo de las columnas y 20px el espacio entre ellas
+}

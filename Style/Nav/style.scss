@@ -1,0 +1,41 @@
+@mixin nav($bg: white, $radius: 0px){
+    position: absolute;
+    @include ul;
+    @include li;
+    width: 100vw;
+    height: 1em;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 1em;
+    background-color: $bg;
+    border-radius: $radius;
+    color: white;
+    
+}
+
+@mixin ul(){
+    display: flex;
+    float: left;
+    gap: 1em;
+}
+@mixin li($size: 1em){
+    list-style: none;
+    font-size: $size;
+}
+
+
+
+.nav{
+    @include nav(red);
+}
+
+.nav-ul{
+    @include ul;
+}
+
+.nav-ul-li{
+    @include li;
+}
+
+

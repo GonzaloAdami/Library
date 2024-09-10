@@ -1,0 +1,13 @@
+@mixin input($width: 200px, $height: 100px, $radius: 15px, $size: 1em){
+    width: $width;
+    height: $height;
+    border-radius: $radius;
+    outline: none;
+    border: none;
+    padding: 0.5em 1em;
+    font-size: $size;
+}
+
+.input{
+    @include input(200px, 10px, 15px, 1em)
+}
